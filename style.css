@@ -34,3 +34,8 @@ h1{
 #TheResult{
     font-size: 6rem;
 }
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
