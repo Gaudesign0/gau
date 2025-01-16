@@ -39,3 +39,7 @@ h1{
 }
 .red, #Computer{
     color: red;
+}
+.score{
+    font-size:3rem;
+}
