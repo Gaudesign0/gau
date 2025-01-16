@@ -53,9 +53,7 @@ const Displayofplayer = document.getElementById("playerDisplay");
 const Computer = document.getElementById("Computer");
 const result = document.getElementById("TheResult");
 
-function click(Playeroption){
-  
-  choices = Number(choices);
+function clickGame(Playeroption){
 
    const Computerchoice = choices[Math.floor(Math.random() * 3)];
 
@@ -78,4 +76,15 @@ function click(Playeroption){
     Displayofplayer.textContent = `Player: ${Playeroption}`;
     Computer.textContent = `Computer: ${Computerchoice}`;
     result.textContent = theresult; 
+
+result.classList.remove("green","red");
+ 
+   switch(theresult){
+    case "YOU WIN!":
+     result.classList.add("green");
+     break;
+     case "YOU'RE A LOSER !":
+     result.classList.add("red");
+     break;
+   }
    }
