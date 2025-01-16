@@ -4,7 +4,7 @@ const Displayofplayer = document.getElementById("playerDisplay");
 const Computer = document.getElementById("Computer");
 const result = document.getElementById("TheResult");
 const playerscore = document.getElementById("Player");
-const computerscore = document.getElementById("Computer");
+const computerscore = document.getElementById("Computerscore");
 var player = 0;
 var computer = 0;
 
