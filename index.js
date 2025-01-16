@@ -1,4 +1,4 @@
-
+//create a list of DOM
 const choices = ["paper", "rock", "scissors"];
 const Displayofplayer = document.getElementById("playerDisplay");
 const Computer = document.getElementById("Computer");
