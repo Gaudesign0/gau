@@ -23,54 +23,17 @@
         <div id="Computer">Computer:</div>
         <div id="TheResult"></div>
 
+    <div class="score">
+        <span id="Player">0</span>
+    </div>
+      <div class="score">
+        <span id="Computer">0</span>
+    </div>
+
     <script src="index.js"></script>
 </body>
 <html>
     <script>
-const thedate= new Date();
-const days = ["sunday","monday","tuesday","weneday","thursday","fiday","saturday"];
-var connect = days[thedate.getDay()];
-//thedate.toISOString();
-document.getElementById("lol").innerText = connect.toLocaleUpperCase();
-
-
-let thetext;
-switch(new Date().getDay()){
-  case 0:
-     thetext = `now is Sunday`;
-        break;
-        case 6:
-        thetext = `it's satuday`;
-        break;
-        default:
-        thetext =`next week, later`;
-}
-document.getElementById("demo").innerText= thetext;
-
-function mybutt(){
-  const x = document.getElementById("demo");x.innerHTML ="";
-  var y = document.getElementById("input2").value;
-  try{
-     if(y === "") throw "you have to sign some thing.(it's empty)";
-     if(isNaN(y)) throw "it must be NUMBER!";
-     if(y >10 ) throw " value is too high";
-     if(y < 1)  throw " value is too low";
-     
-     y = Number(y);
-  }
-catch(g){
-   x.innerHTML = "this is input that" +" "+g; 
-} 
-finally{
- document.getElementById("input2").value = "";
-}
-}
-
-themorning = (a) => {
-  return "good morning my friend" + a;
-}
-console.log(themorning());
-
 
 
        </script>
