@@ -1,57 +1,12 @@
 
-
-var states = `hello, my name's Gau, What do you want to ask me?`;
-var text = states.search("Gau");
-console.log(text);
-
-
-//function theprice(){
-//  var total = document.getElementById("Myselect").value;
- // document.getElementById("lol").innerHTML = "this is your optoin:" + total;
-//}
-
-
-class drinks {
-  todrink = true;
-
-  getname(){console.log(`oh, this is ${this.name}, and you can drink`)};
-  getname1(){console.log(`oh, this is ${this.name} that's a great drink, and you can give for your friends, too`)};
-}
-
-class coke extends drinks {
-  name ="a coke";
-}
-class pepsi extends drinks{
-   name = "a pepsi";
-}
-
-const cokes = new coke();
-const pepsis = new pepsi();
-
-console.log(cokes.todrink);
-pepsis.getname();
-cokes.getname1();
-
-const tax = 55 / 1000;
-let price = 0;
-
-function priceaftertaxing(bwm, ferrari, taxing){
-
-    if(bwm > 1000 || bwm > 999){
-        console.log(`you got a bargain`);
-    }else if(bwm < 999){
-        console.log(`you must buy enough to get bargain`);
-    }
-  return bwm = Math.floor((price + bwm) * tax);
-}
-
-const total = priceaftertaxing(1500);
-console.log(`${total}$ you have been taxed`)
-
 const choices = ["paper", "rock", "scissors"];
 const Displayofplayer = document.getElementById("playerDisplay");
 const Computer = document.getElementById("Computer");
 const result = document.getElementById("TheResult");
+const playerscore = document.getElementById("Player");
+const computerscore = document.getElementById("Computer");
+var player = 0;
+var computer = 0;
 
 function clickGame(Playeroption){
 
@@ -82,9 +37,13 @@ result.classList.remove("green","red");
    switch(theresult){
     case "YOU WIN!":
      result.classList.add("green");
+     player++;
+     playerscore.textContent = player;
      break;
      case "YOU'RE A LOSER !":
      result.classList.add("red");
+     computer ++;
+     computerscore.textContent = computer;
      break;
    }
    }
