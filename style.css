@@ -34,8 +34,8 @@ h1{
 #TheResult{
     font-size: 6rem;
 }
-.green{
+.green #Player{
     color: green;
 }
-.red{
+.red #Computer{
     color: red;
