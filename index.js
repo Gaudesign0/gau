@@ -18,13 +18,13 @@ function clickGame(Playeroption){
    }else{
     switch(Playeroption){
        case "rock":
-        theresult = (Computerchoice === "scissors") ? "YOU WIN!" : "YOU'RE LOSER !"
+        theresult = (Computerchoice === "scissors") ? "YOU WIN!" : "YOU'RE A LOSER !"
          break;
           case "paper":
-           theresult = (Computerchoice === "rock") ? "YOU WIN!" : "YOU'RE LOSER !"
+           theresult = (Computerchoice === "rock") ? "YOU WIN!" : "YOU'RE A LOSER !"
           break;
             case "scissors":
-             theresult = (Computerchoice === "paper") ? "YOU WIN!" : "YOU'RE LOSER !"
+             theresult = (Computerchoice === "paper") ? "YOU WIN!" : "YOU'RE A LOSER !"
              break;
            }
     }
