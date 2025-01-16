@@ -37,9 +37,9 @@ h1{
 .green, #Player{
     color: green;
 }
-.red, #Computer{
+.red, #Computerscore{
     color: red;
 }
 .score{
-    font-size:3rem;
+    font-size: 3rem;
 }
