@@ -1,0 +1,36 @@
+button{
+    background-color: rgb(56, 182, 255);
+    color: black;
+    cursor: pointer;
+    font-size: 8rem;
+    border-radius: 290px;
+    margin: 0px 10px;
+    transition: background-color 1s ease;
+    min-width: 120px;
+}
+body{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3.45rem;
+}
+#options{
+    margin: 35px;
+}
+#options button:hover{
+    background-color: hsl(202, 100%, 81%);
+}
+
+#playerDisplay, #Computer{
+    font-size: 2.5rem;
+}
+#TheResult{
+    font-size: 6rem;
+}
